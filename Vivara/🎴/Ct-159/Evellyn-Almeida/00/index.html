@@ -296,27 +296,7 @@
     
     
     
-    <script>
-    
-      // Função para capturar os parâmetros UTM
-  function getUTMParameters() {
-    var params = {};
-    window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(str, key, value) {
-        // Usa a função customEncodeURIComponent para codificar o valor
-        params[key] = customEncodeURIComponent(value);
-    });
-    return params;
-  }
 
-  // Função personalizada para codificação
-  function customEncodeURIComponent(str) {
-    return encodeURIComponent(str).replace(/%5B/g, '[').replace(/%5D/g, ']');
-  }
-
-    
-    
-</script>
-  
 
 
 
